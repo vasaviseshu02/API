@@ -1,0 +1,6 @@
+--To find encoding format of any file
+
+import chardet
+with open(file, 'rb') as rawdata:
+    result = chardet.detect(rawdata.read(100000))
+result
